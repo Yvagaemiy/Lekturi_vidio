@@ -12,15 +12,15 @@
 # Input: 5 -> 5 1 6 5 9
 # Output: 1 9
 
-n = int(input())
+n = int(input('Введите количество арбухов: '))
 
-min1 = 3001
-max1 = -1
+# min1 = 3001
+# max1 = -1
 
-for i in range(n):
-    x = int(input())
-    if x > max1:
-        max1 = x
-    if x < min1:
-        min1 = x
-print(min1, max1)
+# for i in range(n):
+#     x = int(input())
+#     if x > max1:
+#         max1 = x
+#     if x < min1:
+#         min1 = x
+# print(min1, max1)
