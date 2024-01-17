@@ -15,5 +15,5 @@ slovo = "She sells sea shells on the sea shore The shells that she sells are sea
 set_1 = set()
 
 for i in slovo:
-    set_1.add(i.lower())
+    set_1.add(i.lower()) # lower  это функция преобразует буквы в маленький регистор
 print(len(set_1))    
