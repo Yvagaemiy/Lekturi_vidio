@@ -13,9 +13,9 @@
 # print(‘same’)
 # else:
 # print(‘different’)
-def same_by(cfsgrthrt, sdvzdfgt):
+def same_by(funcia, objikt):
     result = True
-    list1 = [cfsgrthrt(x) for  x in sdvzdfgt]
+    list1 = [funcia(x) for  x in objikt]
     for i in range(len(list1) - 1):
         if list1[i] != list1[i + 1]:
             return False

@@ -13,7 +13,7 @@
 # человека)
 # 4. Использование функций. Ваша программа
 # не должна быть линейной
-from logger import input_data, print_data
+from logger import input_data, print_data_1
 
 
 
@@ -28,4 +28,4 @@ def interfes():
     if command == 1:
         input_data()
     elif command == 2:
-        print_data()    
+        print_data_1()    

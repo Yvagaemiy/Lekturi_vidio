@@ -20,7 +20,7 @@ def input_data():
         var = int(input('Введите правельный вариант : '))
 
     if var == 1:
-        with open('data_first_variant.csv ','a', encoding= 'utf - 8') as f:# 'a' записать данные
+        with open('data_first_variant.csv ','a', encoding= 'utf - 8') as f:# 'a' записать данные а - 'as f' открываем как имя файла f
             f.write(f"{name}\n{surname}\n{phone}\n{address}\n\n")
     elif var == 2:
         with open('data_second_variant.csv ','a', encoding= 'utf - 8') as f:
@@ -45,4 +45,17 @@ def print_data():
         print(*data_second)
 
 
+
+def print_data_1():# распечатать_контакт
+   print('Вывожу данные из 1 файла: \n')
+   with open('data_first_variant.csv','r',encoding='utf-8')as f:
+    #    print('__________________')
+    #    print(fail.read())
+    #    print('__________________')
+    data_first = f.read().rstrip().split('\n\n')
+    for nn, contakt in enumerate(data_first, 1):
+        print(f'{nn}. {contakt }\n')
+
+    
+   
 
